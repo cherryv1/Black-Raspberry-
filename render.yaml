@@ -9,4 +9,4 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        value: PLACEHOLDER_BACKEND_URL # Marcador de posición, se actualizará después del despliegue del backend
+        value: https://blackcore-pegasus-api.onrender.com # Marcador de posición, se actualizará después del despliegue del backend
