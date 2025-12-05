@@ -1,0 +1,12 @@
+services:
+  - type: static
+    name: black-raspberry
+    env: static
+    repo: https://github.com/cherryv1/Black-Raspberry-.git
+    branch: main
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: PLACEHOLDER_BACKEND_URL # Marcador de posición, se actualizará después del despliegue del backend
