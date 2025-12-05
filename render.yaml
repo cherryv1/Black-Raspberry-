@@ -1,7 +1,7 @@
 services:
-  - type: static
+  - type: web
+    runtime: static
     name: black-raspberry
-    env: static
     repo: https://github.com/cherryv1/Black-Raspberry-.git
     branch: main
     plan: free
@@ -9,4 +9,4 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        value: https://blackcore-pegasus-api.onrender.com # Marcador de posición, se actualizará después del despliegue del backend
+        value: https://blackcore-pegasus.onrender.com
