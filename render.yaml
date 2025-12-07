@@ -7,6 +7,11 @@ services:
     plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: dist
+    headers:
+      - path: /*
+        headers:
+          - key: Cache-Control
+            value: max-age=31536000, public, immutable
     envVars:
       - key: VITE_API_URL
         value: https://blackcore-pegasus.onrender.com
